@@ -1,0 +1,63 @@
+# WESAD-like Physiological Data Analysis Configuration
+
+# Data paths and loading
+data:
+  data_path: "WESAD"  # Path to your dataset
+  subject_id: "S2"    # Default subject to analyze
+  output_path: "results"
+  
+# Data preprocessing
+preprocessing:
+  window_len: 1000    # Window length for time series
+  stride: 500         # Stride between windows
+  normalize_method: "global"  # "global" or "per_subject"
+  
+# Class filtering and aggregation
+classes:
+  drop_classes: []    # Classes to remove (e.g., ["meditation", "baseline"])
+  aggregate_to_one: ["0", "3"]  # Classes to aggregate to "resting"
+  class_mapping:
+    "0": "resting"
+    "3": "resting"
+    "1": "stress"
+    "2": "amusement"
+
+# Cross-validation settings
+cv:
+  type: "repeated"    # "repeated" or "simple"
+  n_splits: 5
+  n_repeats: 3
+  random_state: 42
+  use_group_kfold: false  # Use GroupKFold if subject_id available
+
+# Model settings
+models:
+  use_deep: false     # Use deep learning models
+  use_timesnet: false # Use TimesNet specifically
+  n_models_ensemble: 5  # Number of models for ensemble
+  
+# Hyperparameter search
+hparams:
+  search_method: "random"  # "grid" or "random"
+  n_iter: 20              # Number of iterations for random search
+  
+# SHAP analysis
+shap:
+  top_k_features: 10      # Top k features for dependence plots
+  max_samples: 100        # Max samples for SHAP computation
+  
+# Robustness testing
+robustness:
+  noise_levels: [0.0, 0.01, 0.02, 0.05, 0.1, 0.2]
+  
+# Correlation analysis
+correlation:
+  accel_columns: ["ACC_X", "ACC_Y", "ACC_Z"]  # Accelerometer columns
+  compute_aggregated: true  # Compute correlations for aggregated "resting" class
+  
+# Output settings
+output:
+  save_figures: true
+  save_models: true
+  save_shap: true
+  save_correlations: true 

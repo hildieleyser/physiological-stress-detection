@@ -1,0 +1,255 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Machine Learning specific
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.ckpt
+*.model
+*.weights
+
+# Data files
+*.csv
+*.tsv
+*.json
+*.xml
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.mat
+
+# Large files and directories
+*.zip
+*.tar.gz
+*.rar
+*.7z
+data/
+datasets/
+raw_data/
+processed_data/
+
+# Results and outputs
+results/
+outputs/
+logs/
+checkpoints/
+models/
+saved_models/
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Configuration files with sensitive data
+config_local.yaml
+.env.local
+secrets.yaml
+
+# Documentation builds
+docs/build/
+site/
+
+# Profiling
+*.prof
+*.lprof
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter notebook outputs
+*.ipynb
+
+# Model artifacts
+wandb/
+mlruns/
+.cache/
+
+# External repositories
+Time-Series-Library/
+TimesNet/
+
+# Virtual environments
+timesnet_env/
+venv/
+env/
+ENV/
+
+# Large data files
+*.txt
+*.csv
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.ckpt
+*.model
+*.weights
+
+# WESAD data files (large)
+WESAD/*/S*_respiban.txt
+
+# Large image files (keep only essential ones)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# Keep only essential documentation images
+!README.md
+!docs/**/*.png
+!docs/**/*.jpg 

@@ -1,0 +1,7 @@
+task,model,design,macro_f1,balanced_accuracy,accuracy
+binary,logistic_regression,random_window_5fold,0.9753,0.9776,0.9777
+binary,random_forest,random_window_5fold,0.9994,0.9992,0.9994
+binary,xgboost,random_window_5fold,0.9988,0.9988,0.9989
+three_class,logistic_regression,random_window_5fold,0.9206,0.9309,0.9354
+three_class,random_forest,random_window_5fold,0.9985,0.9984,0.9989
+three_class,xgboost,random_window_5fold,0.9988,0.9986,0.9989

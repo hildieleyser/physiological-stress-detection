@@ -1,0 +1,5 @@
+task,comparison,mean_difference,ci_low,ci_high,people
+binary,"calibrated minus raw, random forest",0.0072,-0.0985,0.1040,15
+binary,"all sensors minus no motion, xgboost",0.0082,-0.0181,0.0362,15
+three_class,"calibrated minus raw, random forest",0.1077,-0.0131,0.2306,15
+three_class,"all sensors minus no motion, xgboost",0.0211,-0.0583,0.0916,15
